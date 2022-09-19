@@ -1,0 +1,132 @@
+body{
+    background: #2d2a3d;
+    color: #fff;
+    font-family: "poppins";
+}
+
+.message{
+    margin: 5em 0 2em;
+    text-align: center;
+    font-size:25px;
+    color: white;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+.computer img .player img{
+    width: 75%;
+    
+}
+
+.shakecomputer{
+    animation: computershake 0.8s linear;
+}
+
+.shakeplayer{
+    animation: playershake 0.8s linear;
+}
+
+
+.points{
+    margin:2em  0em;
+    text-align:center;
+}
+
+.computerpoint{
+    margin-left: 3em;
+}
+
+.playerpoint{
+    margin-right: 3em;
+}
+
+.option{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.option button{
+    background:none;
+    color: white;
+    border: 1px solid #fff;
+    cursor: pointer;
+    padding :1em  2em;
+    border-radius: 7px;
+    width: 150px;
+    white-space: nowrap;
+    transition: 0.2s all linear;
+
+}
+
+
+.option button:hover{
+    background-color: darkcyan;
+    border:1 px solid darkcyan;
+
+}
+
+
+ @keyframes computershake{
+    0%{
+        transform: rotate(-30deg);
+    }
+
+    25%{
+        transform:rotate(30deg);
+    }
+    50%{
+        transform:rotate(-30deg);
+    }
+    75%{
+        transform:rotate(30deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+ }
+
+ 
+ @keyframes playershake{
+    0%{
+        transform: rotate(30deg);
+    }
+
+    25%{
+        transform:rotate(-30deg);
+    }
+    50%{
+        transform:rotate(30deg);
+    }
+    75%{
+        transform:rotate(-30deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+ }
+
+
+ @media (max-width:550px) {
+
+    #img{
+        width: 80%;
+        
+    }
+
+    
+.option button{
+    
+    width: 100px;
+  
+
+}
+
+ }
