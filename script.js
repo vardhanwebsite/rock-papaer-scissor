@@ -51,7 +51,7 @@ option.forEach((option) => {
             count++ 
 
            
-        }, 900);
+        }, 90);
 
 
     
